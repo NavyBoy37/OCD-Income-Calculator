@@ -4,12 +4,14 @@ hours_worked = 0  # hours worked biweekly
 shift_length = float(0)  # in hours
 hourly_pay = float(0)  # in dollars
 paid_holidays = 0  # calculated using full shift of pay
-retirement_percentage = float(0)
-retirement_plan_match = float(0)
-stock_plan_cont = float(0)
-stock_plan_disc = float(0)
-hsa_yearly = float(0)
-other_income = float(0)
+retirement_percentage = float(0)  # amount you commit to a 401k in decimal
+retirement_plan_match = float(
+    0
+)  # amount your company matches in decimal.  Does not account for federal caps yet
+stock_plan_cont = float(0)  # amount you contribute to ESPP in decimal
+stock_plan_disc = float(0)  # amount company stock is discounted by in decimal
+hsa_yearly = float(0)  # yearly company funded hsa contributions
+other_income = float(0)  # other income (holiday pay is counted into this number later)
 
 print("Please enter the following information")
 print("1. Built In overtime hours worked biweekly")
